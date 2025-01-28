@@ -19,7 +19,7 @@ function DisplayTasks({ todos, setTodos, activeTab }: InputProps) {
   };
 
   const handleDeleteTodo = (index: number) => {
-    setTodos((prev) => prev.filter((todo, i) => i !== index));
+    setTodos((prev) => prev.filter((_todo, i) => i !== index));
   };
 
   const handleClearAllTodos = () => {
