@@ -4,6 +4,16 @@ A feature-rich **Todo App** built with **TypeScript**, **React**, and **Vite**. 
 
 ---
 
+## Versions as Per Files
+
+1. **Normal**  
+
+2. **Optimized via Using useContext Hook**  
+
+3. **Optimized via Using Redux Toolkit**  
+
+---
+
 ## Features
 
 1. **Add Todos**  
@@ -53,6 +63,7 @@ A feature-rich **Todo App** built with **TypeScript**, **React**, and **Vite**. 
    ```bash
    npm run dev
 
+---
 
 ## How It Works
 
@@ -62,7 +73,8 @@ A feature-rich **Todo App** built with **TypeScript**, **React**, and **Vite**. 
   
 - **Dynamic Filtering:** Tab navigation dynamically filters tasks based on their completion status.
 
-   
+
+---
 
 
 ## Folder Structure
