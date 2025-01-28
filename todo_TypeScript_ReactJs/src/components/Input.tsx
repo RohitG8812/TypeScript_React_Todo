@@ -10,7 +10,7 @@ interface InputProps {
   setTodos: React.Dispatch<SetStateAction<TodoData[]>>;
 }
 
-function Input({ todos, setTodos }: InputProps) {
+function Input({ setTodos }: InputProps) {
   const [value, setValue] = useState("");
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     let inputText = e.target.value;
