@@ -21,6 +21,9 @@ const todoSlice = createSlice({
         date: new Date(),
       });
     },
+    setTodos: (_state, action: PayloadAction<Todo[]>) => {
+      return action.payload;
+    },
     toggleTodo: (state, action: PayloadAction<string>) => {
       const todo = state.find((todo) => todo.id === action.payload);
       if (todo) {
@@ -40,6 +43,6 @@ const todoSlice = createSlice({
   },
 });
 
-export const { addTodo, toggleTodo, deleteAllTodo, deleteTodo, loadTodos } =
+export const { addTodo, toggleTodo, deleteAllTodo, deleteTodo, loadTodos, setTodos } =
   todoSlice.actions;
 export default todoSlice.reducer;

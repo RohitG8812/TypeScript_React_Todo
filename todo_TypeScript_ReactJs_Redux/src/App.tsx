@@ -5,12 +5,12 @@ import DisplayTasks from "./components/DisplayTasks";
 
 function App() {
   return (
-    <>
+    <div className="mainSection">
       <Home />
       <TabNavigation />
       <Input />
       <DisplayTasks />
-    </>
+    </div>
   );
 }
 
