@@ -50,6 +50,7 @@ A feature-rich **Todo App** built with **TypeScript**, **React**, and **Vite**. 
 ## Tech Stack
 
 - **React**: Component-based UI framework.
+- **Redux**: Managing Sate of Todos Globally.
 - **TypeScript**: Ensures type safety and scalability.
 - **Vite**: Fast and efficient development environment.
 - **localStorage**: Persistent data storage for todos.
