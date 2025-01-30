@@ -6,12 +6,20 @@ A feature-rich **Todo App** built with **TypeScript**, **React**, and **Vite**. 
 
 ## Versions as Per Files
 
-1. **Normal**  
+1. **Normal**
+   
+   ```bash
+   https://type-script-react-todo-ebon.vercel.app/
 
-2. **Optimized via Using useContext Hook**  
+2. **Optimized via Using useContext Hook**
+   
+   ```bash
+   https://todotypescriptreactoptimized.vercel.app/
 
-3. **Optimized via Using Redux Toolkit**  
-
+3. **Optimized via Using Redux Toolkit**
+   
+   ```bash
+   https://type-script-react-todo-nine.vercel.app/
 ---
 
 ## Features
@@ -42,6 +50,7 @@ A feature-rich **Todo App** built with **TypeScript**, **React**, and **Vite**. 
 ## Tech Stack
 
 - **React**: Component-based UI framework.
+- **Redux**: Managing Sate of Todos Globally.
 - **TypeScript**: Ensures type safety and scalability.
 - **Vite**: Fast and efficient development environment.
 - **localStorage**: Persistent data storage for todos.
@@ -78,13 +87,54 @@ A feature-rich **Todo App** built with **TypeScript**, **React**, and **Vite**. 
 
 
 ## Folder Structure
+
+
 ```bash
+*for Normal File
+
 src/
 ├── components/
 │   ├── Input.tsx          # Input field for adding tasks
+│   ├── Home.tsx          # Input field for adding tasks
+│   ├── DisplayTasks.tsx   # Displays and manages todos
+│   ├── TabNavigation.tsx  # Tab navigation for filtering todos
+├── App.tsx                # App component
+├── index.html             # index file 
+├── index.css              # style file
+├── App.tsx                # App component
+├── main.tsx               # Main component
+
+
+*using UseContext Hook
+
+src/
+├── components/
+│   ├── Input.tsx          # Input field for adding tasks
+│   ├── Home.tsx          # Input field for adding tasks
 │   ├── DisplayTasks.tsx   # Displays and manages todos
 │   ├── TabNavigation.tsx  # Tab navigation for filtering todos
 ├── store/
 │   └── TodoContext.tsx    # Context for managing todos globally
-├── App.tsx                # Main app component
-├── main.tsx
+├── App.tsx                # App component
+├── index.html             # index file 
+├── index.css              # style file
+├── App.tsx                # App component
+├── main.tsx               # Main component
+
+
+*using Redux Toolkit
+
+src/
+├── components/
+│   ├── Input.tsx          # Input field for adding tasks
+│   ├── Home.tsx          # Input field for adding tasks
+│   ├── DisplayTasks.tsx   # Displays and manages todos
+│   ├── TabNavigation.tsx  # Tab navigation for filtering todos
+├── redux/
+│   └── store.tsx         # Redux Store for managing todos globally
+│   └── TodoSlice.tsx    # Redux Slice for managing todos globally
+├── App.tsx                # App component
+├── index.html             # index file 
+├── index.css              # style file
+├── App.tsx                # App component
+├── main.tsx               # Main component
