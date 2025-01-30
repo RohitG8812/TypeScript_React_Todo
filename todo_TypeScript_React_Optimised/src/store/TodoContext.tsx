@@ -6,18 +6,18 @@ import {
   useState,
 } from "react";
 
-export type Todo = {
+type Todo = {
   id: string;
   task: string;
   isDone: boolean;
   date: Date;
 };
 
-export interface InputProps {
+interface InputProps {
   children: ReactNode;
 }
 
-export interface TodosContext {
+interface TodosContext {
   todos: Todo[];
   handleAddTodo: (task: string) => void;
   handleCheckBox: (id: string) => void;

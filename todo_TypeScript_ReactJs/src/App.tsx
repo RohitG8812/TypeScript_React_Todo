@@ -33,7 +33,7 @@ function App() {
     <div className="mainSection">
       <Home />
       <TabNavigation activeTab={activeTab} setActiveTab={setActiveTab} />
-      <Input todos={todos} setTodos={setTodos} />
+      <Input todos={todos} setTodos={setTodos} name={"ROhit"}/>
       <DisplayTasks todos={todos} setTodos={setTodos} activeTab={activeTab} />
     </div>
   );

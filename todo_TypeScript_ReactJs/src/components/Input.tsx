@@ -6,12 +6,13 @@ interface TodoData {
 }
 
 interface InputProps {
+  name : string
   todos: TodoData[];
   setTodos: React.Dispatch<SetStateAction<TodoData[]>>;
 }
 
 function Input({ setTodos }: InputProps) {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState<string>("");
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     let inputText = e.target.value;
     setValue(inputText);
